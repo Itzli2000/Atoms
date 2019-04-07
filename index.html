@@ -19,12 +19,14 @@
   <div id="mainContainer" class="container-fluid">
     <!-- Section for navigation bar and slider -->
     <div class="row" id="firstSection">
+      <!-- Border images -->
       <img src="assets/images/background/palmera_izquierda_arriba.png" class="img-fluid floatImageTop" alt="main image">
       <img src="assets/images/background/palmera_derecha.png" class="img-fluid floatImageBottom" alt="main image">
+      <!-- Navigation bar -->
       <nav class="navbar navbar-expand-lg w-100 fixed-top">
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav w-100 justify-content-center">
-            <li class="nav-item">
+            <li class="nav-item px-1">
               <a class="nav-link" href="#">US</a>
               <span class="languageSeparator">|</span>
               <a class="nav-link" href="#">MX</a>
@@ -57,8 +59,7 @@
         </div>
       </nav>
       <div class="mainSectionContent row">
-
-
+        <!-- Main section carousel -->
         <div id="carouselMainSection" class="carousel slide row justify-content-center align-items-center" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item row active">
@@ -139,27 +140,36 @@
             </div>
           </div>
         </div>
-
-
-
-        
       </div>
     </div>
+
     <!-- Section for products slider -->
     <div class="row" id="secondSection">
       <div class="col">
         <h2 class="pt-4">nuevos productos</h2>
         <h3>malosa</h3>
         <div id="carouselProducts" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="..." alt="First slide">
+            <div class="carousel-item pt-5 pb-2 active">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/1.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/2.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/3.png" alt="First slide">
             </div>
+            <div class="carousel-item pt-5 pb-2">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/1.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/2.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/3.png" alt="First slide">
+            </div>
+            <div class="carousel-item pt-5 pb-2">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/1.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/2.png" alt="First slide">
+              <img class="img-fluid" src="assets/images/fotos/nuevos_productos/3.png" alt="First slide">
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
           </div>
           <a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -172,6 +182,7 @@
         </div>
       </div>
     </div>
+
     <!-- Section for products slider -->
     <div class="row" id="thirdSection"></div>
 

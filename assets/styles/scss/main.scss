@@ -32,11 +32,12 @@ body {
     height: 80px;
     @include linearGradient(rgba(0,0,0,0.4),rgba(239,239,239,0.1));
     .nav-item {
-      padding: 0 40px;
+      padding: 0 30px;
       .nav-link {
         display: inline-block;
         color: $fullWhite;
-        &.active {
+        &.active,
+        &:hover {
           color: $mainColor;
         }
         img {
@@ -219,6 +220,55 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
+  }
+  #carouselProducts {
+    .carousel-inner {
+      height: 100%;
+      .carousel-item {
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 350px;
+          margin: 0 10px;
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            @include boxShadow(10px, 8px, 30px, 0, rgba(0,0,0,0.5));
+          }
+        }
+      }
+      .carousel-indicators {
+        position: relative;
+        margin: auto;
+        margin-top: 25px;
+        bottom:0;
+        width: 300px;
+        li {
+          background-color: $accentColor;
+          &.active {
+            background-color: $mainColor;
+          }
+        }
+        .carousel-indicators-number {
+          font-size: 20px;
+          top: -13px;
+          color: $mainColor;
+          &:first-of-type {
+            position: absolute;
+            left: 20px;
+          }
+          &:last-of-type {
+            right: -10px;
+          }
+        }
+      }
+    }
+    .carousel-control-next, .carousel-control-prev {
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+      &:hover {
+        opacity:1;
+      }
+    }
   }
 }
 

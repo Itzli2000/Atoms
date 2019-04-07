@@ -38,11 +38,11 @@ body {
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%); }
     #firstSection .navbar .nav-item {
-      padding: 0 40px; }
+      padding: 0 30px; }
       #firstSection .navbar .nav-item .nav-link {
         display: inline-block;
         color: #FFFFFF; }
-        #firstSection .navbar .nav-item .nav-link.active {
+        #firstSection .navbar .nav-item .nav-link.active, #firstSection .navbar .nav-item .nav-link:hover {
           color: #dcba79; }
         #firstSection .navbar .nav-item .nav-link img {
           width: 150px;
@@ -179,6 +179,43 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 20px; }
+  #secondSection #carouselProducts .carousel-inner {
+    height: 100%; }
+    #secondSection #carouselProducts .carousel-inner .carousel-item {
+      text-align: center; }
+      #secondSection #carouselProducts .carousel-inner .carousel-item img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 10px;
+        transition: all 0.25s ease-in-out; }
+        #secondSection #carouselProducts .carousel-inner .carousel-item img:hover {
+          -webkit-box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5); }
+    #secondSection #carouselProducts .carousel-inner .carousel-indicators {
+      position: relative;
+      margin: auto;
+      margin-top: 25px;
+      bottom: 0;
+      width: 300px; }
+      #secondSection #carouselProducts .carousel-inner .carousel-indicators li {
+        background-color: #906d29; }
+        #secondSection #carouselProducts .carousel-inner .carousel-indicators li.active {
+          background-color: #dcba79; }
+      #secondSection #carouselProducts .carousel-inner .carousel-indicators .carousel-indicators-number {
+        font-size: 20px;
+        top: -13px;
+        color: #dcba79; }
+        #secondSection #carouselProducts .carousel-inner .carousel-indicators .carousel-indicators-number:first-of-type {
+          position: absolute;
+          left: 20px; }
+        #secondSection #carouselProducts .carousel-inner .carousel-indicators .carousel-indicators-number:last-of-type {
+          right: -10px; }
+  #secondSection #carouselProducts .carousel-control-next, #secondSection #carouselProducts .carousel-control-prev {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out; }
+    #secondSection #carouselProducts .carousel-control-next:hover, #secondSection #carouselProducts .carousel-control-prev:hover {
+      opacity: 1; }
 
 #thirdSection {
   height: 100vh;

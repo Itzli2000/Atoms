@@ -37,3 +37,9 @@
   background: -ms-linear-gradient(top, $start 0%, $stop 100%);
   background: linear-gradient(to bottom, $start 0%, $stop 100%);
 }
+
+@mixin boxShadow($horizontal:14px, $vertical:10px, $blur: 50px,$spread: 0px, $color:rgba(0,0,0,0.75)) {
+  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+  -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+  box-shadow: $horizontal $vertical $blur $spread $color;
+}
