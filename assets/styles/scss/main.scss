@@ -17,6 +17,7 @@ body {
   background-size: cover;
   min-height: 100vh;
   margin: 0 -15px;
+  padding-top: 80px;
   .floatImageTop {
     position: absolute;
     left: 0;
@@ -26,17 +27,24 @@ body {
   .floatImageBottom {
     position: absolute;
     right: 0;
-    bottom: -250px;
+    bottom: -410px;
     height: 500px;
   }
   .navbar {
     height: 80px;
     @include linearGradient(rgba(0,0,0,0.4),rgba(239,239,239,0.1));
-    .nav-link {
-      display: inline-block;
-      img {
-        width: 150px;
-        height: auto;
+    .nav-item {
+      padding: 0 40px;
+      .nav-link {
+        display: inline-block;
+        color: $fullWhite;
+        &.active {
+          color: $mainColor;
+        }
+        img {
+          width: 150px;
+          height: auto;
+        }
       }
     }
   }
@@ -44,7 +52,7 @@ body {
     position: relative;
     #carouselExampleControls {
       width: 100vw;
-      min-height: 120vh;
+      min-height: 110vh;
       .carousel-inner {
         height: 100%;
       }
@@ -96,6 +104,7 @@ body {
         position: relative;
         right: -140px;
         width: 420px;
+        padding-top: 50px;
         h1 {
           padding-left: 15px;
           position: relative;
@@ -127,8 +136,56 @@ body {
               width: 20px;
               height: 20px;
               margin-top: 10px;
-              a {
-                outline: none;
+              &:nth-of-type(1) {
+                a {
+                  outline: none;
+                  &:before {
+                    content: '';
+                    background-image: url('../../images/iconos/social_media/facebook1_off.png');
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute;
+                  }
+                  &:hover:before {
+                    background-image: url('../../images/iconos/social_media/facebook_hover.png');
+                  }
+                }
+              }
+              &:nth-of-type(2) {
+                a {
+                  outline: none;
+                  &:before {
+                    content: '';
+                    background-image: url('../../images/iconos/social_media/insta1_off.png');
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute;
+                  }
+                  &:hover:before {
+                    background-image: url('../../images/iconos/social_media/insta_hover.png');
+                  }
+                }
+              }
+              &:nth-of-type(3) {
+                a {
+                  outline: none;
+                  &:before {
+                    content: '';
+                    background-image: url('../../images/iconos/social_media/twitter1_off.png');
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute;
+                  }
+                  &:hover:before {
+                    background-image: url('../../images/iconos/social_media/twitter_hover.png');
+                  }
+                }
               }
             }
           }
@@ -142,4 +199,14 @@ body {
       }
     }
   }
+}
+
+#secondSection {
+  min-height: 100vh;
+  background-color: #faf7f6;
+}
+
+#thirdSection {
+  height: 100vh;
+  background-color: #faf7f6;
 }
