@@ -1,0 +1,145 @@
+@import '__mixins.scss';
+@import '__variables.scss';
+
+@include fontFace(ProximaNova,ProximaNova-Regular);
+
+body {
+  font-family: 'ProximaNova-Regular', Arial, sans-serif;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+}
+
+#firstSection {
+  background-image: url('../../images/background/top.png');
+  background-position: top left;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0 -15px;
+  .floatImageTop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+  }
+  .floatImageBottom {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    height: 500px;
+  }
+  .navbar {
+    height: 80px;
+    @include linearGradient(rgba(0,0,0,0.4),rgba(239,239,239,0.1));
+    .nav-link {
+      display: inline-block;
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  }
+  .mainSectionContent {
+    position: relative;
+    #carouselExampleControls {
+      width: 100vw;
+      min-height: 120vh;
+      .carousel-inner {
+        height: 100%;
+      }
+      .carousel-item {
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel-control-next, .carousel-control-prev {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      }
+      .carousel-title {
+        font-size: 22px !important;
+        text-transform: uppercase;
+        color: $mainColor !important;
+        letter-spacing: 3px;
+        margin-left: 100px;
+      }
+      .carousel-indicators {
+        position: relative;
+        margin: 0;
+        margin-top: 10px;
+        bottom:0;
+        width: 300px;
+        li {
+          width: 50px;
+          margin: 0;
+          background-color: $gray;
+          &.active {
+            background-color: $mainColor;
+          }
+        }
+        .carousel-indicators-number {
+          font-size: 20px;
+          top: -13px;
+          color: $mainColor;
+          &:first-of-type {
+            position: absolute;
+            left: 20px;
+          }
+          &:last-of-type {
+            right: -10px;
+          }
+        }
+      }
+      .textSection {
+        position: relative;
+        right: -140px;
+        width: 420px;
+        h1 {
+          padding-left: 15px;
+          position: relative;
+          font-size: 70px;
+          line-height: 60px;
+          color: $mainColor;
+          text-transform: uppercase;
+          z-index: 10;
+        }
+        h3 {
+          position: relative;
+          font-size: 30px;
+          color: $secondaryColor;
+          text-transform: uppercase;
+          z-index: 10;
+        }
+        p {
+          position: relative;
+          font-size: 11px;
+          color: $secondaryColor;
+          max-width: 150px;
+          z-index: 10;
+        }
+        .socialMediaList {
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              width: 20px;
+              height: 20px;
+              margin-top: 10px;
+              a {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+      .imageSection {
+        margin-top: 40px;
+        img {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}

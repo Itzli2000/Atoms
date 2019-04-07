@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'ProximaNova-Regular', Arial, sans-serif; }
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex; }
+
+#firstSection {
+  background-image: url("../../images/background/top.png");
+  background-position: top left;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0 -15px; }
+  #firstSection .floatImageTop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px; }
+  #firstSection .floatImageBottom {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    height: 500px; }
+  #firstSection .navbar {
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(239, 239, 239, 0.1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(239, 239, 239, 0.1) 100%); }
+    #firstSection .navbar .nav-link {
+      display: inline-block; }
+      #firstSection .navbar .nav-link img {
+        width: 150px;
+        height: auto; }
+  #firstSection .mainSectionContent {
+    position: relative; }
+    #firstSection .mainSectionContent #carouselExampleControls {
+      width: 100vw;
+      min-height: 120vh; }
+      #firstSection .mainSectionContent #carouselExampleControls .carousel-inner {
+        height: 100%; }
+      #firstSection .mainSectionContent #carouselExampleControls .carousel-item {
+        justify-content: center;
+        align-items: center; }
+      #firstSection .mainSectionContent #carouselExampleControls .carousel-control-next, #firstSection .mainSectionContent #carouselExampleControls .carousel-control-prev {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px; }
+      #firstSection .mainSectionContent #carouselExampleControls .carousel-title {
+        font-size: 22px !important;
+        text-transform: uppercase;
+        color: #dcba79 !important;
+        letter-spacing: 3px;
+        margin-left: 100px; }
+      #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators {
+        position: relative;
+        margin: 0;
+        margin-top: 10px;
+        bottom: 0;
+        width: 300px; }
+        #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators li {
+          width: 50px;
+          margin: 0;
+          background-color: #e9e6e8; }
+          #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators li.active {
+            background-color: #dcba79; }
+        #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators .carousel-indicators-number {
+          font-size: 20px;
+          top: -13px;
+          color: #dcba79; }
+          #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators .carousel-indicators-number:first-of-type {
+            position: absolute;
+            left: 20px; }
+          #firstSection .mainSectionContent #carouselExampleControls .carousel-indicators .carousel-indicators-number:last-of-type {
+            right: -10px; }
+      #firstSection .mainSectionContent #carouselExampleControls .textSection {
+        position: relative;
+        right: -140px;
+        width: 420px; }
+        #firstSection .mainSectionContent #carouselExampleControls .textSection h1 {
+          padding-left: 15px;
+          position: relative;
+          font-size: 70px;
+          line-height: 60px;
+          color: #dcba79;
+          text-transform: uppercase;
+          z-index: 10; }
+        #firstSection .mainSectionContent #carouselExampleControls .textSection h3 {
+          position: relative;
+          font-size: 30px;
+          color: #2e6272;
+          text-transform: uppercase;
+          z-index: 10; }
+        #firstSection .mainSectionContent #carouselExampleControls .textSection p {
+          position: relative;
+          font-size: 11px;
+          color: #2e6272;
+          max-width: 150px;
+          z-index: 10; }
+        #firstSection .mainSectionContent #carouselExampleControls .textSection .socialMediaList ul {
+          list-style: none;
+          padding: 0; }
+          #firstSection .mainSectionContent #carouselExampleControls .textSection .socialMediaList ul li {
+            width: 20px;
+            height: 20px;
+            margin-top: 10px; }
+            #firstSection .mainSectionContent #carouselExampleControls .textSection .socialMediaList ul li a {
+              outline: none; }
+      #firstSection .mainSectionContent #carouselExampleControls .imageSection {
+        margin-top: 40px; }
+        #firstSection .mainSectionContent #carouselExampleControls .imageSection img {
+          max-width: 600px; }
+
+/*# sourceMappingURL=main.css.map */
