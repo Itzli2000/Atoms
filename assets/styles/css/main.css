@@ -324,4 +324,90 @@ body {
         font-size: 30px;
         padding-left: 20px; }
 
+#fourthSection {
+  padding: 50px 0; }
+  #fourthSection .informationContainer {
+    max-width: 1000px;
+    width: 100%; }
+    #fourthSection .informationContainer .nav-tabs .nav-link {
+      color: #000000;
+      text-transform: uppercase; }
+      #fourthSection .informationContainer .nav-tabs .nav-link.active {
+        color: #dcba79;
+        background-color: #FFFFFF;
+        border: none;
+        border-bottom: 2px solid #dcba79; }
+    #fourthSection .informationContainer .tab-pane h2 {
+      text-transform: uppercase;
+      color: #000000;
+      text-align: left;
+      font-size: 20px; }
+    #fourthSection .informationContainer .tab-pane .informationData {
+      display: inline-block; }
+      #fourthSection .informationContainer .tab-pane .informationData .user {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #dcba79;
+        font-size: 13px;
+        margin-left: 15px; }
+        #fourthSection .informationContainer .tab-pane .informationData .user:before {
+          content: '';
+          background-image: url("../../images/iconos/usuario_hover.png");
+          width: 13px;
+          height: 13px;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: -20px; }
+      #fourthSection .informationContainer .tab-pane .informationData .date {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #dcba79;
+        font-size: 13px;
+        margin-left: 45px; }
+        #fourthSection .informationContainer .tab-pane .informationData .date:before {
+          content: '';
+          background-image: url("../../images/iconos/calendario.png");
+          width: 13px;
+          height: 13px;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: -20px; }
+    #fourthSection .informationContainer .tab-pane .informationText p {
+      font-size: 13px;
+      line-height: 15px; }
+    #fourthSection .informationContainer .tab-pane .informationButtons {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      -ms-align-items: space-between;
+      align-items: center; }
+      #fourthSection .informationContainer .tab-pane .informationButtons .readMore {
+        background-color: #dcba79;
+        color: #FFFFFF;
+        width: 40%;
+        border-radius: 2px; }
+      #fourthSection .informationContainer .tab-pane .informationButtons .toBlog {
+        background-color: transparent;
+        color: #dcba79;
+        text-decoration: underline;
+        width: 40%;
+        border-radius: 2px; }
+
 /*# sourceMappingURL=main.css.map */

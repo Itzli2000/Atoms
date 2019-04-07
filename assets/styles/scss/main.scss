@@ -399,3 +399,90 @@ body {
     }
   }
 }
+
+#fourthSection {
+  padding: 50px 0;
+  .informationContainer {
+    max-width: 1000px;
+    width: 100%;
+    .nav-tabs .nav-link {
+      color: $fullBlack;
+      text-transform: uppercase;
+      &.active {
+        color: $mainColor;
+        background-color: $fullWhite;
+        border: none ;
+        border-bottom: 2px solid $mainColor;
+      }
+    }
+    .tab-pane {
+      h2 {
+        text-transform: uppercase;
+        color: $fullBlack;
+        text-align: left;
+        font-size: 20px;
+      }
+      .informationData {
+        display: inline-block;
+        .user {
+          position: relative;
+          display: inline-block;
+          text-transform: uppercase;
+          color: $mainColor;
+          font-size: 13px;
+          margin-left: 15px;
+          &:before {
+            content: '';
+            background-image: url('../../images/iconos/usuario_hover.png');
+            width: 13px;
+            height: 13px;
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            left: -20px;
+          }
+        }
+        .date {
+          position: relative;
+          display: inline-block;
+          text-transform: uppercase;
+          color: $mainColor;
+          font-size: 13px;
+          margin-left: 45px;
+          &:before {
+            content: '';
+            background-image: url('../../images/iconos/calendario.png');
+            width: 13px;
+            height: 13px;
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            left: -20px;
+          }
+        }
+      }
+      .informationText {
+        p {
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+      .informationButtons {
+        @include flexElement(row, wrap, space-between);
+        .readMore {
+          background-color: $mainColor;
+          color: $fullWhite;
+          width: 40%;
+          border-radius: 2px;
+        }
+        .toBlog {
+          background-color: transparent;
+          color: $mainColor;
+          text-decoration: underline;
+          width: 40%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
