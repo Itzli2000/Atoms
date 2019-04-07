@@ -2,14 +2,12 @@
 @import '__variables.scss';
 
 @include fontFace(ProximaNova,ProximaNova-Regular);
+@include fontFace(ProximaNovaBold,ProximaNova-Bold);
 
 body {
   font-family: 'ProximaNova-Regular', Arial, sans-serif;
 }
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-  display: flex;
-}
 
 #firstSection {
   background-image: url('../../images/background/top.png');
@@ -46,57 +44,64 @@ body {
           height: auto;
         }
       }
+      .languageSeparator,
+      .dropdown-toggle::after {
+        color: $mainColor;
+      }
     }
   }
   .mainSectionContent {
     position: relative;
-    #carouselExampleControls {
+    #carouselMainSection {
       width: 100vw;
       min-height: 110vh;
       .carousel-inner {
         height: 100%;
-      }
-      .carousel-item {
-        justify-content: center;
-        align-items: center;
-      }
-      .carousel-control-next, .carousel-control-prev {
-        position: relative;
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-      }
-      .carousel-title {
-        font-size: 22px !important;
-        text-transform: uppercase;
-        color: $mainColor !important;
-        letter-spacing: 3px;
-        margin-left: 100px;
-      }
-      .carousel-indicators {
-        position: relative;
-        margin: 0;
-        margin-top: 10px;
-        bottom:0;
-        width: 300px;
-        li {
-          width: 50px;
-          margin: 0;
-          background-color: $gray;
-          &.active {
-            background-color: $mainColor;
-          }
+        .carousel-item {
+          justify-content: center;
+          align-items: center;
         }
-        .carousel-indicators-number {
-          font-size: 20px;
-          top: -13px;
-          color: $mainColor;
-          &:first-of-type {
-            position: absolute;
-            left: 20px;
+        .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+          display: flex;
+        }
+        .carousel-control-next, .carousel-control-prev {
+          position: relative;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+        }
+        .carousel-title {
+          font-size: 22px !important;
+          text-transform: uppercase;
+          color: $mainColor !important;
+          letter-spacing: 3px;
+          margin-left: 100px;
+        }
+        .carousel-indicators {
+          position: relative;
+          margin: 0;
+          margin-top: 10px;
+          bottom:0;
+          width: 300px;
+          li {
+            width: 50px;
+            margin: 0;
+            background-color: $gray;
+            &.active {
+              background-color: $mainColor;
+            }
           }
-          &:last-of-type {
-            right: -10px;
+          .carousel-indicators-number {
+            font-size: 20px;
+            top: -13px;
+            color: $mainColor;
+            &:first-of-type {
+              position: absolute;
+              left: 20px;
+            }
+            &:last-of-type {
+              right: -10px;
+            }
           }
         }
       }
@@ -204,6 +209,17 @@ body {
 #secondSection {
   min-height: 100vh;
   background-color: #faf7f6;
+  h2 {
+    text-transform: uppercase;
+    color: $mainColor;
+    text-align: center;
+    font-size: 25px;
+  }
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 #thirdSection {
