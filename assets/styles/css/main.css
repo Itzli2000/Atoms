@@ -14,10 +14,15 @@ html {
 body {
   font-family: 'ProximaNova-Regular', Arial, sans-serif; }
 
+textarea, select, input, button {
+  outline: none;
+  box-shadow: none; }
+
 #firstSection {
   background-image: url("../../images/background/top.png");
-  background-position: top left;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0 -15px;
   padding-top: 80px; }
@@ -401,13 +406,92 @@ body {
       #fourthSection .informationContainer .tab-pane .informationButtons .readMore {
         background-color: #dcba79;
         color: #FFFFFF;
+        border: none;
         width: 40%;
-        border-radius: 2px; }
+        border-radius: 2px;
+        transition: all 0.25s ease-in-out; }
+        #fourthSection .informationContainer .tab-pane .informationButtons .readMore:hover {
+          border: 1px solid #dcba79;
+          background-color: #FFFFFF;
+          color: #dcba79; }
       #fourthSection .informationContainer .tab-pane .informationButtons .toBlog {
         background-color: transparent;
         color: #dcba79;
         text-decoration: underline;
         width: 40%;
-        border-radius: 2px; }
+        border-radius: 2px;
+        transition: all 0.25s ease-in-out; }
+        #fourthSection .informationContainer .tab-pane .informationButtons .toBlog:hover {
+          background-color: #dcba79;
+          color: #FFFFFF;
+          text-decoration: none; }
+
+#fifthSection .container {
+  align-items: center;
+  max-width: 1000;
+  width: 100%; }
+  #fifthSection .container .formConatiner {
+    -webkit-box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.1);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    height: 300px;
+    width: 450px;
+    position: relative;
+    float: right;
+    background-color: #FFFFFF;
+    right: -80px;
+    border-radius: 20px 0 0 20px; }
+    #fifthSection .container .formConatiner h2 {
+      text-transform: uppercase;
+      font-size: 25px; }
+    #fifthSection .container .formConatiner p {
+      font-size: 13px;
+      color: #9b9b9b; }
+    #fifthSection .container .formConatiner form {
+      display: inline-block;
+      width: 70%;
+      text-align: center; }
+      #fifthSection .container .formConatiner form .inputContainer {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #e9e6e8; }
+        #fifthSection .container .formConatiner form .inputContainer:before {
+          content: '';
+          background-image: url("../../images/iconos/mail.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: 0;
+          top: 7px; }
+        #fifthSection .container .formConatiner form .inputContainer input {
+          display: inline-block;
+          border: none;
+          padding-left: 30px; }
+      #fifthSection .container .formConatiner form button {
+        width: 200px;
+        background: #f8f1e4;
+        color: #906d29;
+        border: 1px solid #906d29; }
 
 /*# sourceMappingURL=main.css.map */
