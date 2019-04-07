@@ -18,7 +18,12 @@ textarea, select, input, button {
   outline: none;
   box-shadow: none; }
 
+#mainContainer {
+  max-width: 1350px;
+  overflow: hidden; }
+
 #firstSection {
+  position: relative;
   background-image: url("../../images/background/top.png");
   background-position: center;
   background-size: cover;
@@ -493,5 +498,100 @@ textarea, select, input, button {
         background: #f8f1e4;
         color: #906d29;
         border: 1px solid #906d29; }
+
+#sixthSection h2 {
+  text-transform: uppercase;
+  color: #dcba79;
+  text-align: center;
+  font-size: 25px; }
+#sixthSection .imagesContainer {
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -ms-align-items: space-around;
+  align-items: space-around; }
+  #sixthSection .imagesContainer .imageSquare {
+    border-radius: 7px;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; }
+    #sixthSection .imagesContainer .imageSquare:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.15s ease; }
+    #sixthSection .imagesContainer .imageSquare:after {
+      font-family: FontAwesome;
+      content: "\f16d";
+      font-size: 30px;
+      width: 30px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0;
+      transition: opacity 0.2s ease; }
+    #sixthSection .imagesContainer .imageSquare:hover:before {
+      background-color: rgba(248, 241, 228, 0.5); }
+    #sixthSection .imagesContainer .imageSquare:hover:after {
+      opacity: 1; }
+#sixthSection .banner {
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden; }
+  #sixthSection .banner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0); }
+  #sixthSection .banner .btn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 90px;
+    right: 210px;
+    background: rgba(220, 186, 121, 0.3);
+    color: #906d29;
+    border: 1px solid #906d29;
+    transition: all 0.15s ease-in-out; }
+    #sixthSection .banner .btn:hover {
+      background: #906d29;
+      color: #FFFFFF;
+      border: none; }
+  #sixthSection .banner .description {
+    position: absolute;
+    bottom: 130px;
+    right: 150px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
