@@ -13,9 +13,14 @@ body {
   font-family: 'ProximaNova-Regular', Arial, sans-serif;
 }
 
-textarea, select, input, button { 
+textarea, select, input, button, .form-control, .btn {
   outline: none;
-  box-shadow: none;
+  box-shadow: none; 
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none; 
+  }
 }
 
 input::placeholder {
@@ -34,7 +39,7 @@ input::placeholder {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100%;
   margin: 0 -15px;
   padding-top: 80px;
   .floatImageTop {
@@ -75,7 +80,8 @@ input::placeholder {
   .mainSectionContent {
     position: relative;
     #carouselMainSection {
-      width: 100vw;
+      width: 100%;
+      margin: 0;
       .carousel-inner {
         height: 100%;
         .carousel-item {
@@ -228,7 +234,7 @@ input::placeholder {
 }
 
 #secondSection {
-  min-height: 100vh;
+  height: 100%;
   background-color: #faf7f6;
   h2 {
     text-transform: uppercase;
@@ -325,7 +331,7 @@ input::placeholder {
 }
 
 #thirdSection {
-  min-height: 100vh;
+  height: 100%;
   background-image: url('../../images/background/medio.png');
   background-size: cover;
   background-position: center;

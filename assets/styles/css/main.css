@@ -14,9 +14,12 @@ html {
 body {
   font-family: 'ProximaNova-Regular', Arial, sans-serif; }
 
-textarea, select, input, button {
+textarea, select, input, button, .form-control, .btn {
   outline: none;
   box-shadow: none; }
+  textarea:active, textarea:focus, select:active, select:focus, input:active, input:focus, button:active, button:focus, .form-control:active, .form-control:focus, .btn:active, .btn:focus {
+    outline: none;
+    box-shadow: none; }
 
 input::placeholder {
   color: #9b9b9b !important; }
@@ -31,7 +34,7 @@ input::placeholder {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100%;
   margin: 0 -15px;
   padding-top: 80px; }
   #firstSection .floatImageTop {
@@ -69,7 +72,8 @@ input::placeholder {
   #firstSection .mainSectionContent {
     position: relative; }
     #firstSection .mainSectionContent #carouselMainSection {
-      width: 100vw; }
+      width: 100%;
+      margin: 0; }
       #firstSection .mainSectionContent #carouselMainSection .carousel-inner {
         height: 100%; }
         #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
@@ -183,7 +187,7 @@ input::placeholder {
           max-width: 600px; }
 
 #secondSection {
-  min-height: 100vh;
+  height: 100%;
   background-color: #faf7f6; }
   #secondSection h2 {
     text-transform: uppercase;
@@ -262,7 +266,7 @@ input::placeholder {
       line-height: 35px; }
 
 #thirdSection {
-  min-height: 100vh;
+  height: 100%;
   background-image: url("../../images/background/medio.png");
   background-size: cover;
   background-position: center;
@@ -584,7 +588,7 @@ input::placeholder {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
   #sixthSection .banner .btn {
     cursor: pointer;
     position: absolute;
