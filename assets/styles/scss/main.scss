@@ -422,12 +422,21 @@ input::placeholder {
     width: 100%;
     .nav-tabs .nav-link {
       color: $fullBlack;
+      border: none ;
       text-transform: uppercase;
+      transition: all 0.25s ease-in-out;
       &.active {
         color: $mainColor;
         background-color: $fullWhite;
         border: none ;
         border-bottom: 2px solid $mainColor;
+        &:hover {
+          background-color: $fullWhite;
+          border-bottom: 2px solid $mainColor;
+        }
+      }
+      &:hover {
+        background-color: $lightColor;
       }
     }
     .tab-pane {
@@ -569,6 +578,12 @@ input::placeholder {
           background: $lightColor;
           color: $accentColor;
           border: 1px solid $accentColor;
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            background: $accentColor;
+            color: $lightColor;
+            border: 1px solid $fullWhite;
+          }
         }
       }
     }

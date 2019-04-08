@@ -343,12 +343,19 @@ input::placeholder {
     width: 100%; }
     #fourthSection .informationContainer .nav-tabs .nav-link {
       color: #000000;
-      text-transform: uppercase; }
+      border: none;
+      text-transform: uppercase;
+      transition: all 0.25s ease-in-out; }
       #fourthSection .informationContainer .nav-tabs .nav-link.active {
         color: #dcba79;
         background-color: #FFFFFF;
         border: none;
         border-bottom: 2px solid #dcba79; }
+        #fourthSection .informationContainer .nav-tabs .nav-link.active:hover {
+          background-color: #FFFFFF;
+          border-bottom: 2px solid #dcba79; }
+      #fourthSection .informationContainer .nav-tabs .nav-link:hover {
+        background-color: #f8f1e4; }
     #fourthSection .informationContainer .tab-pane h2 {
       text-transform: uppercase;
       color: #000000;
@@ -499,7 +506,12 @@ input::placeholder {
         width: 200px;
         background: #f8f1e4;
         color: #906d29;
-        border: 1px solid #906d29; }
+        border: 1px solid #906d29;
+        transition: all 0.25s ease-in-out; }
+        #fifthSection .container .formConatiner form button:hover {
+          background: #906d29;
+          color: #f8f1e4;
+          border: 1px solid #FFFFFF; }
 
 #sixthSection h2 {
   text-transform: uppercase;
