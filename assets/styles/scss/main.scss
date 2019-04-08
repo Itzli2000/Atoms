@@ -736,11 +736,13 @@ input::placeholder {
         max-width: 250px;
       }
       .mainList {
+        font-size: 13px;
         text-decoration: none;
         padding: 0 20px;
         li {
           list-style: none;
           position: relative;
+          margin-bottom: 5px;
           &:before {
             position: absolute;
             content: '';
@@ -751,7 +753,7 @@ input::placeholder {
             background-color: $gray;
             border-radius: 50%;
             border: 1px solid $fullBlack;
-            top:7px;
+            top:5px;
           }
           a {
             color: $fullBlack;
@@ -1007,6 +1009,34 @@ input::placeholder {
         }
       }
 
+    }
+  }
+}
+
+footer {
+  .footerContainer {
+    border-top: 2px solid $gray;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    div {
+      font-size: 13px;
+      color: $darkGray;
+      a {
+        color: $darkGray;
+        transition: color 0.15s ease-in-out;
+        &:hover {
+          color: $mainColor;
+        }
+      }
+      span {
+        a {
+          color: $accentColor;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
