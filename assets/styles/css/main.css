@@ -646,10 +646,12 @@ input::placeholder {
   #seventhSection .container .bottomContainer img {
     max-width: 200px; }
   #seventhSection .container .bottomContainer .mainDescription {
-    font-size: 12px;
+    font-size: 11px;
     color: #000000;
     text-align: justify;
-    padding-top: 30px; }
+    padding-top: 30px;
+    width: 100%;
+    max-width: 250px; }
   #seventhSection .container .bottomContainer .mainList {
     text-decoration: none;
     padding: 0 20px; }
@@ -672,5 +674,182 @@ input::placeholder {
         transition: color 0.1s ease-in-out; }
         #seventhSection .container .bottomContainer .mainList li a:hover {
           color: #dcba79; }
+  #seventhSection .container .bottomContainer .socialList {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0; }
+    #seventhSection .container .bottomContainer .socialList li {
+      list-style: none;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin: 0 5px; }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a:before {
+          content: '';
+          background-image: url("../../images/iconos/social_media/facebook2_off.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-position: center;
+          position: absolute; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a:hover:before {
+          background-image: url("../../images/iconos/social_media/facebook_hover.png"); }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(2) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(2) a:before {
+          content: '';
+          background-image: url("../../images/iconos/social_media/facebook2_off.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-position: center;
+          position: absolute; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(2) a:hover:before {
+          background-image: url("../../images/iconos/social_media/facebook_hover.png"); }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(3) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(3) a:before {
+          content: '';
+          background-image: url("../../images/iconos/social_media/twitter2_off.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-position: center;
+          position: absolute; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(3) a:hover:before {
+          background-image: url("../../images/iconos/social_media/twitter_hover.png"); }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(4) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(4) a:before {
+          content: '';
+          background-image: url("../../images/iconos/social_media/insta2_off.png");
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-position: center;
+          position: absolute; }
+        #seventhSection .container .bottomContainer .socialList li:nth-of-type(4) a:hover:before {
+          background-image: url("../../images/iconos/social_media/insta_hover.png"); }
+  #seventhSection .container .bottomContainer .pagesContainer h4 {
+    font-size: 14px;
+    color: #000000;
+    padding: 20px 0; }
+  #seventhSection .container .bottomContainer .pagesContainer ul {
+    padding-left: 10px; }
+    #seventhSection .container .bottomContainer .pagesContainer ul li {
+      list-style: none;
+      margin-bottom: 15px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #000000;
+      transition: color 0.15s ease; }
+      #seventhSection .container .bottomContainer .pagesContainer ul li:hover {
+        color: #dcba79; }
+  #seventhSection .container .bottomContainer .paymentTitle {
+    font-size: 14px;
+    color: #000000;
+    padding: 20px 0; }
+  #seventhSection .container .bottomContainer .paymentList {
+    padding-left: 0; }
+    #seventhSection .container .bottomContainer .paymentList li {
+      list-style: none;
+      position: relative;
+      width: 60px;
+      height: 30px;
+      display: inline-block;
+      margin: 0 5px; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(1) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(1) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/american.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(2) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(2) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/banamex.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(3) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(3) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/bancomer.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(4) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(4) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/mastercard.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(5) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(5) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/mercadopago.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(6) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(6) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/paypal.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(7) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(7) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/santander.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(8) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(8) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/seven.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
+      #seventhSection .container .bottomContainer .paymentList li:nth-of-type(9) a {
+        outline: none; }
+        #seventhSection .container .bottomContainer .paymentList li:nth-of-type(9) a:before {
+          content: '';
+          background-image: url("../../images/iconos/metodos_de_pago/visa.png");
+          width: 60px;
+          height: 30px;
+          background-size: cover;
+          background-position: center;
+          position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
