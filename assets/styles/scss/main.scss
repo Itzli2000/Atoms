@@ -251,13 +251,160 @@ input::placeholder {
       height: 100%;
       .carousel-item {
         text-align: center;
-        img {
+        .productContainer {
           width: 100%;
           max-width: 350px;
           margin: 0 10px;
+          display: inline-block;
           transition: all 0.25s ease-in-out;
+          position: relative;
           &:hover {
             @include boxShadow(10px, 8px, 30px, 0, rgba(0,0,0,0.5));
+          }
+          .image-point {
+            position: absolute;
+            .point {
+              &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+              }
+              position: relative;
+              cursor: pointer;
+              height: 14px;
+              width: 14px;
+              background: $fullWhite;
+              border: 1px solid $accentColor;
+              border-radius: 100%;
+              animation-name: pulseOut;
+              animation-duration: .5s;
+              animation-iteration-count: 1;
+              &:hover {
+                animation-fill-mode: forwards;
+                animation-name: pulseIn;
+                animation-duration: .5s;
+                animation-iteration-count: 1;
+              }
+              &:before {
+                transition: all 0.5s;
+                color: $fullWhite;
+                content: '';
+                font-size: 12px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                display: inline;
+                left: 50%;
+                transform-origin: 50% 50%;
+              }
+            }
+            .point-content {
+              display: none;
+              transition: all 0.5s;
+              visibility: hidden;
+              opacity: 0;
+              top: 0;
+              left: 0;
+              position: absolute;
+              max-width: 400px;
+              width: 200px;
+              min-height: 200px;
+              background: $fullWhite;
+              display: flex;
+              box-shadow: 0 40px 70px 0 rgba(0, 0, 0, 0.22), 0px 27px 24px 0 rgba(0, 0, 0, 0.2);
+              &.top {
+                top: unset !important;
+                bottom: 0;
+              }
+              .closeFloatCard {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                z-index: 10;
+                color: transparent;
+              }
+              &.active {
+                top: 20px;
+                left: 10px;
+                visibility: visible;
+                opacity: 1;
+                z-index: 99;
+                &.top {
+                  top:unset !important;
+                  bottom: 20px;
+                }
+              }
+              .point-details {
+                padding: 15px;
+                text-align: left;
+                font-size: 12px;
+                h3 {
+                  white-space: nowrap; 
+                  width: 100%; 
+                  overflow: hidden;
+                  text-overflow:ellipsis;
+                  color: $mainColor;
+                  font-weight: bold;
+                  font-size: 15px;
+                }
+                .price {
+                  font-family: 'ProximaNovaBold', Arial, sans-serif;
+                  font-size: 13px;
+                  margin-right: auto;
+                  font-weight: bold;
+                  display: inline-block;
+                  margin-bottom: 0;
+                  
+                }
+                span {
+                  float: right;
+                  i {
+                    display: inline-block;
+                    cursor: pointer;
+                    &:nth-of-type(1) {
+                      width: 20px;
+                      height: 20px;
+                      &:before {
+                        content: '';
+                        background-image: url('../../images/iconos/ver_off.png');
+                        width: 20px;
+                        height: 20px;
+                        background-size: contain;
+                        background-position: center;
+                        position: absolute;
+                      }
+                      &:hover:before {
+                        background-image: url('../../images/iconos/ver_hover.png');
+                      }
+                    }
+                    &:nth-of-type(2) {
+                      width: 20px;
+                      height: 20px;
+                      &:before {
+                        content: '';
+                        background-image: url('../../images/iconos/carrito2_off.png');
+                        width: 20px;
+                        height: 20px;
+                        background-size: contain;
+                        background-position: center;
+                        position: absolute;
+                      }
+                      &:hover:before {
+                        background-image: url('../../images/iconos/carrito_hover.png');
+                      }
+                    }
+                  }
+                }
+              }
+              .col {
+                padding-left: 5px;
+                padding-right: 5px;
+                .point-image {
+                  padding: 5px 0;
+                  width: 100%;
+                  img {}
+                }
+              }
+            }
           }
         }
       }
@@ -1058,5 +1205,23 @@ footer {
         }
       }
     }
+  }
+}
+
+@keyframes pulseIn {
+  from {
+    box-shadow: transparent 0 0 0 0;
+  }
+  to {
+    box-shadow: 0 0 0 5px rgba($mainColor, 0.30), 0 0 0 10px rgba($mainColor, 0.20), 0 0 0 15px rgba($mainColor, 0.10);
+  }
+}
+
+@keyframes pulseOut {
+  from {
+    box-shadow: 0 0 0 5px rgba($mainColor, 0.30), 0 0 0 10px rgba($mainColor, 0.20), 0 0 0 15px rgba($mainColor, 0.10);
+  }
+  to {
+    box-shadow: transparent 0 0 0 0;
   }
 }

@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ProximaNova";
-  src: url("ProximaNova-Regular.ttf") format("truetype");
+  src: url("ProximaNova-Regular.ttf") format("truetype"), url("ProximaNova-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "ProximaNovaBold";
-  src: url("ProximaNova-Bold.ttf") format("truetype");
+  src: url("ProximaNova-Bold.ttf") format("truetype"), url("ProximaNova-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 html {
@@ -202,15 +202,137 @@ input::placeholder {
     height: 100%; }
     #secondSection #carouselProducts .carousel-inner .carousel-item {
       text-align: center; }
-      #secondSection #carouselProducts .carousel-inner .carousel-item img {
+      #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer {
         width: 100%;
         max-width: 350px;
         margin: 0 10px;
-        transition: all 0.25s ease-in-out; }
-        #secondSection #carouselProducts .carousel-inner .carousel-item img:hover {
+        display: inline-block;
+        transition: all 0.25s ease-in-out;
+        position: relative; }
+        #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer:hover {
           -webkit-box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5);
           -moz-box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 10px 8px 30px 0 rgba(0, 0, 0, 0.5); }
+        #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point {
+          position: absolute; }
+          #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point {
+            position: relative;
+            cursor: pointer;
+            height: 14px;
+            width: 14px;
+            background: #FFFFFF;
+            border: 1px solid #906d29;
+            border-radius: 100%;
+            animation-name: pulseOut;
+            animation-duration: .5s;
+            animation-iteration-count: 1; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point:before {
+              transform: translate(-50%, -50%) rotate(45deg); }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point:hover {
+              animation-fill-mode: forwards;
+              animation-name: pulseIn;
+              animation-duration: .5s;
+              animation-iteration-count: 1; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point:before {
+              transition: all 0.5s;
+              color: #FFFFFF;
+              content: '';
+              font-size: 12px;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              display: inline;
+              left: 50%;
+              transform-origin: 50% 50%; }
+          #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content {
+            display: none;
+            transition: all 0.5s;
+            visibility: hidden;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            position: absolute;
+            max-width: 400px;
+            width: 200px;
+            min-height: 200px;
+            background: #FFFFFF;
+            display: flex;
+            box-shadow: 0 40px 70px 0 rgba(0, 0, 0, 0.22), 0px 27px 24px 0 rgba(0, 0, 0, 0.2); }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content.top {
+              top: unset !important;
+              bottom: 0; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .closeFloatCard {
+              position: absolute;
+              top: 0;
+              right: 0;
+              cursor: pointer;
+              z-index: 10;
+              color: transparent; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content.active {
+              top: 20px;
+              left: 10px;
+              visibility: visible;
+              opacity: 1;
+              z-index: 99; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content.active.top {
+                top: unset !important;
+                bottom: 20px; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details {
+              padding: 15px;
+              text-align: left;
+              font-size: 12px; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details h3 {
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #dcba79;
+                font-weight: bold;
+                font-size: 15px; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details .price {
+                font-family: 'ProximaNovaBold', Arial, sans-serif;
+                font-size: 13px;
+                margin-right: auto;
+                font-weight: bold;
+                display: inline-block;
+                margin-bottom: 0; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span {
+                float: right; }
+                #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i {
+                  display: inline-block;
+                  cursor: pointer; }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1) {
+                    width: 20px;
+                    height: 20px; }
+                    #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1):before {
+                      content: '';
+                      background-image: url("../../images/iconos/ver_off.png");
+                      width: 20px;
+                      height: 20px;
+                      background-size: contain;
+                      background-position: center;
+                      position: absolute; }
+                    #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1):hover:before {
+                      background-image: url("../../images/iconos/ver_hover.png"); }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2) {
+                    width: 20px;
+                    height: 20px; }
+                    #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2):before {
+                      content: '';
+                      background-image: url("../../images/iconos/carrito2_off.png");
+                      width: 20px;
+                      height: 20px;
+                      background-size: contain;
+                      background-position: center;
+                      position: absolute; }
+                    #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2):hover:before {
+                      background-image: url("../../images/iconos/carrito_hover.png"); }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .col {
+              padding-left: 5px;
+              padding-right: 5px; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .col .point-image {
+                padding: 5px 0;
+                width: 100%; }
     #secondSection #carouselProducts .carousel-inner .carousel-indicators {
       position: relative;
       margin: 35px auto;
@@ -888,5 +1010,16 @@ footer .footerContainer {
       color: #906d29;
       font-size: 15px;
       font-weight: bold; }
+
+@keyframes pulseIn {
+  from {
+    box-shadow: transparent 0 0 0 0; }
+  to {
+    box-shadow: 0 0 0 5px rgba(220, 186, 121, 0.3), 0 0 0 10px rgba(220, 186, 121, 0.2), 0 0 0 15px rgba(220, 186, 121, 0.1); } }
+@keyframes pulseOut {
+  from {
+    box-shadow: 0 0 0 5px rgba(220, 186, 121, 0.3), 0 0 0 10px rgba(220, 186, 121, 0.2), 0 0 0 15px rgba(220, 186, 121, 0.1); }
+  to {
+    box-shadow: transparent 0 0 0 0; } }
 
 /*# sourceMappingURL=main.css.map */
