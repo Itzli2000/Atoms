@@ -430,16 +430,19 @@ input::placeholder {
       background-repeat: no-repeat;
       overflow: hidden; }
       #thirdSection .grid-container > div:before {
+        opacity: 0;
         content: '';
         width: 100%;
         height: 100%;
         background-color: transparent;
         position: absolute;
-        left: 0;
+        left: -360px;
         top: 0;
-        transition: all 0.15s ease; }
+        transition: all 0.25s ease; }
       #thirdSection .grid-container > div:hover:before {
-        background-color: rgba(0, 0, 0, 0.6); }
+        background-color: rgba(0, 0, 0, 0.6);
+        left: 0;
+        opacity: 1; }
       #thirdSection .grid-container > div:nth-of-type(1) {
         background-image: url("../../images/fotos/colecciones/1.png"); }
       #thirdSection .grid-container > div:nth-of-type(2) {
@@ -680,7 +683,10 @@ input::placeholder {
       position: absolute;
       left: 0;
       top: 0;
-      transition: all 0.15s ease; }
+      transition: all 0.5s ease;
+      transform-origin: top left;
+      transform-style: preserve-3D;
+      transform: rotate(180deg); }
     #sixthSection .imagesContainer .imageSquare:after {
       font-family: FontAwesome;
       content: "\f16d";
@@ -690,15 +696,17 @@ input::placeholder {
       left: 0;
       right: 0;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-90%) rotate(-180deg);
       margin-left: auto;
       margin-right: auto;
       opacity: 0;
-      transition: opacity 0.2s ease; }
+      transition: all 0.6s ease; }
     #sixthSection .imagesContainer .imageSquare:hover:before {
-      background-color: rgba(248, 241, 228, 0.5); }
+      background-color: rgba(248, 241, 228, 0.5);
+      transform: rotate(360deg); }
     #sixthSection .imagesContainer .imageSquare:hover:after {
-      opacity: 1; }
+      opacity: 1;
+      transform: translateY(-50%) rotate(0deg); }
 #sixthSection .banner {
   margin-top: 100px;
   position: relative;
@@ -811,9 +819,10 @@ input::placeholder {
         top: 5px; }
       #seventhSection .container .bottomContainer .mainList li a {
         color: #000000;
-        transition: color 0.1s ease-in-out; }
+        transition: color 0.1s ease-in-out, letter-spacing 0.2s ease-in-out; }
         #seventhSection .container .bottomContainer .mainList li a:hover {
-          color: #dcba79; }
+          color: #dcba79;
+          letter-spacing: 1px; }
   #seventhSection .container .bottomContainer .socialList {
     text-decoration: none;
     display: inline-block;
@@ -824,7 +833,10 @@ input::placeholder {
       width: 20px;
       height: 20px;
       display: inline-block;
-      margin: 0 5px; }
+      margin: 0 5px;
+      transition: transform 1s ease; }
+      #seventhSection .container .bottomContainer .socialList li:hover {
+        transform: rotate(360deg); }
       #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a {
         outline: none; }
         #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a:before {
@@ -885,8 +897,9 @@ input::placeholder {
       font-size: 12px;
       cursor: pointer;
       color: #000000;
-      transition: color 0.15s ease; }
+      transition: color 0.15s ease, padding 0.35s ease; }
       #seventhSection .container .bottomContainer .pagesContainer ul li:hover {
+        padding-left: 10px;
         color: #dcba79; }
   #seventhSection .container .bottomContainer .paymentTitle {
     font-size: 14px;
