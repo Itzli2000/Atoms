@@ -22,8 +22,11 @@
 @mixin fontFace($font-family, $name, $weight: normal, $style: normal) {
   @font-face {
     font-family: '#{$font-family}';
-    src: url('#{$name}.ttf') format('truetype'),
-         url('#{$name}.otf') format('opentype');
+    src: url('#{$name}.eot') format('eot'),
+          url('#{$name}.woff2') format('woff2'),
+          url('#{$name}.woff') format('woff'),
+          url('#{$name}.ttf') format('truetype'),
+          url('#{$name}.otf') format('opentype');
     font-weight: $weight;
     font-style: $style;
   }

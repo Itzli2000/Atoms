@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ProximaNova";
-  src: url("ProximaNova-Regular.ttf") format("truetype"), url("ProximaNova-Regular.otf") format("opentype");
+  src: url("ProximaNova-Regular.eot") format("eot"), url("ProximaNova-Regular.woff2") format("woff2"), url("ProximaNova-Regular.woff") format("woff"), url("ProximaNova-Regular.ttf") format("truetype"), url("ProximaNova-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "ProximaNovaBold";
-  src: url("ProximaNova-Bold.ttf") format("truetype"), url("ProximaNova-Bold.otf") format("opentype");
+  src: url("ProximaNova-Bold.eot") format("eot"), url("ProximaNova-Bold.woff2") format("woff2"), url("ProximaNova-Bold.woff") format("woff"), url("ProximaNova-Bold.ttf") format("truetype"), url("ProximaNova-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 html {
