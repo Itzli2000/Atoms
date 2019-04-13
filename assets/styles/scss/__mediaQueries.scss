@@ -525,23 +525,23 @@
         padding: 0 15px;
       }
     }
-  }
-  .mainSectionContent {
-    #carouselMainSection {
-      .carousel-inner {
-        .carousel-item {
-          justify-content: flex-start;
+    .mainSectionContent {
+      #carouselMainSection {
+        .carousel-inner {
+          .carousel-item {
+            justify-content: flex-start !important;
+          }
         }
-      }
-      .imageSection {
-        img {
-          position: relative;
-          left: -20px;
+        .imageSection {
+          img {
+            position: relative;
+            left: -20px;
+          }
         }
-      }
-      .textSection {
-        h1 {
-          font-size: 50px !important;
+        .textSection {
+          h1 {
+            font-size: 50px !important;
+          }
         }
       }
     }

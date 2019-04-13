@@ -25,7 +25,7 @@ input::placeholder {
   color: #9b9b9b !important; }
 
 #mainContainer {
-  max-width: 1350px;
+  max-width: 1700px;
   overflow: hidden; }
 
 #firstSection {
@@ -1530,13 +1530,12 @@ footer .footerContainer {
 @media only screen and (max-width: 1200px) {
   #firstSection .navbar .nav-item {
     padding: 0 15px; }
-
-  .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
-    justify-content: flex-start; }
-  .mainSectionContent #carouselMainSection .imageSection img {
+  #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
+    justify-content: flex-start !important; }
+  #firstSection .mainSectionContent #carouselMainSection .imageSection img {
     position: relative;
     left: -20px; }
-  .mainSectionContent #carouselMainSection .textSection h1 {
+  #firstSection .mainSectionContent #carouselMainSection .textSection h1 {
     font-size: 50px !important; } }
 
 /*# sourceMappingURL=main.css.map */
