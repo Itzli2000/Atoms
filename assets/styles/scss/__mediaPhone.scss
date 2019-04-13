@@ -62,7 +62,7 @@
               }
             }
             .carousel-indicators-number {
-                color: $accentColor !important;
+              color: $accentColor !important;
               font-size: 20px;
               top: -13px;
               &:first-of-type {
@@ -136,16 +136,18 @@
     }
     #carouselProductsMobile {
       .carousel-inner {
+        overflow: visible;
         .carousel-item {
           padding-top: 10px !important;
           .productContainer {
             margin: 10px 0;
             max-width: 90%;
-            // img {
-            //   max-width: unset;
-            //   width: auto;
-            //   height: 90vh,
-            // }
+            width: auto;
+            .productContainerImage {
+              max-width: unset;
+              height: 80vh;
+              width: auto;
+            }
             .image-point {
               position: absolute;
               .point {
@@ -306,6 +308,7 @@
         margin-bottom: 10px;
         margin-top: -25px;
         .tab-pane {
+          max-width: unset;
           background-color: $fullWhite;
           padding-bottom: 10px;
           h2 {
@@ -318,11 +321,12 @@
 
   #fifthSection {
     .container {
+      height: 100%;
       .formConatiner {
         @include boxShadow(0px, 0px, 40px, 0, rgba(0,0,0,0));
         width: 100%;
-        max-width: 450px;
-        margin: auto;
+        max-width: 650px;
+        margin: auto !important;
         float: none;
         right: 0;
         border-radius: 0;
@@ -338,7 +342,7 @@
   #sixthSection {
     padding-top: 0 !important;
     h2 {
-      padding-top: 10px !important;
+      padding-top: 40px !important;
       padding-bottom: 10px !important;
       font-size: 25px;
     }
