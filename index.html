@@ -153,7 +153,7 @@
       <div class="col p-0">
         <h2 class="pt-4">nuevos productos</h2>
         <h3>malosa</h3>
-        <div id="carouselProducts" class="carousel slide" data-ride="carousel">
+        <div id="carouselProducts" class="carousel slide d-none d-md-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item pt-5 pb-2 active">
               <div class="productContainer">
@@ -410,6 +410,107 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <div id="carouselProductsMobile" class="carousel slide d-block d-lg-none" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item pt-5 pb-2 active">
+              <div class="productContainer">
+                <div class="image-point" style="top:180px; left:150px;">
+                  <div class="point"></div>
+                  <div class="point-content">
+                    <div class="closeFloatCard">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                      <div class="point-image">
+                        <img class="img-fluid" src="https://dummyimage.com/200x200/000/fff" alt="dummy image">
+                      </div>
+                      <div class="point-details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                          <p class="price">$100.00</p>
+                          <span>
+                            <i></i>
+                            <i></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/images/fotos/nuevos_productos/1.png" alt="First slide">
+              </div>
+            </div>
+            <div class="carousel-item pt-5 pb-2">
+              <div class="productContainer">
+                <div class="image-point" style="bottom:180px; left:150px;">
+                  <div class="point"></div>
+                  <div class="point-content top">
+                    <div class="closeFloatCard">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                      <div class="point-image">
+                        <img class="img-fluid" src="https://dummyimage.com/200x200/000/fff" alt="dummy image">
+                      </div>
+                      <div class="point-details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                          <p class="price">$100.00</p>
+                          <span>
+                            <i></i>
+                            <i></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/images/fotos/nuevos_productos/2.png" alt="First slide">
+              </div>
+            </div>
+            <div class="carousel-item pt-5 pb-2">
+              <div class="productContainer">
+                <div class="image-point" style="bottom:180px; left:150px;">
+                  <div class="point"></div>
+                  <div class="point-content top">
+                    <div class="closeFloatCard">
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                      <div class="point-image">
+                        <img class="img-fluid" src="https://dummyimage.com/200x200/000/fff" alt="dummy image">
+                      </div>
+                      <div class="point-details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                          <p class="price">$100.00</p>
+                          <span>
+                            <i></i>
+                            <i></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="assets/images/fotos/nuevos_productos/3.png" alt="First slide">
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+          </div>
+          <a class="carousel-control-prev" href="#carouselProductsMobile" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselProductsMobile" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
         <div class="productsBanner">
           <img src="assets/images/banner/1.png" class="img-fluid" alt="first banner image">
@@ -449,10 +550,10 @@
     <!-- Section for tabs information -->
     <div class="row justify-content-center" id="fourthSection">
       <div class="row informationContainer">
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <img src="assets/images/fotos/blog/1.png" class="img-fluid" alt="information image">
         </div>
-        <div class="col p-0">
+        <div class="col-12 col-lg-6 p-0">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#home">malosa land</a>
@@ -535,7 +636,7 @@
 
     <!-- Section for influencer -->
     <div class="row" id="fifthSection">
-      <div class="row p-0 container">
+      <div class="d-flex flex-column-reverse flex-lg-row p-0 container">
         <div class="col-sm-12 col-lg-6 justify-content-end">
           <div class="formConatiner">
             <h2>¿Eres influencer?</h2>
