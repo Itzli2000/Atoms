@@ -685,6 +685,7 @@ input::placeholder {
     align-items: center;
     max-width: 1000px;
     width: 100%;
+    height: 100%;
     .formConatiner {
       @include boxShadow(0px, 0px, 40px, 0, rgba(0,0,0,0.1));
       @include flexElement(column);
@@ -747,6 +748,21 @@ input::placeholder {
 }
 
 #sixthSection {
+  position: relative;
+  .floatImageTop {
+    position: absolute;
+    left: -19%;
+    top: 0;
+    height: 400px;
+    transform: translateX(50%);
+  }
+  .floatImageBottom {
+    position: absolute;
+    right: -10%;
+    top: 25%;
+    height: 300px;
+    transform: translateX(-30%);
+  }
   h2 {
     text-transform: uppercase;
     color: $mainColor;
@@ -803,7 +819,7 @@ input::placeholder {
     }
   }
   .banner {
-    margin-top: 100px;
+    margin-top: 120px;
     position: relative;
     overflow: hidden;
     &:before {
@@ -1241,6 +1257,4 @@ footer {
   }
 }
 
-@import "__mediaLarge.scss";
-@import "__mediaTablet.scss";
-@import "__mediaPhone.scss";
+@import "__mediaQueries.scss";

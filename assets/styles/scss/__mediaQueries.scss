@@ -9,7 +9,7 @@
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
   #firstSection {
     padding-top: 48px;
     .navbar {
@@ -334,7 +334,10 @@
         margin: 15px 0;
       }
       img {
-        padding: 15px;
+        width: 100%;
+        max-width: 450px;
+        display: block;
+        margin: 20px auto;
       }
     }
   }
