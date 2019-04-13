@@ -718,7 +718,7 @@ input::placeholder {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   #sixthSection .banner .btn {
     cursor: pointer;
     position: absolute;
@@ -1034,5 +1034,212 @@ footer .footerContainer {
     box-shadow: 0 0 0 5px rgba(220, 186, 121, 0.3), 0 0 0 10px rgba(220, 186, 121, 0.2), 0 0 0 15px rgba(220, 186, 121, 0.1); }
   to {
     box-shadow: transparent 0 0 0 0; } }
+@media only screen and (max-width: 767px) {
+  #firstSection {
+    padding-top: 45px; }
+    #firstSection .navbar {
+      background: rgba(0, 0, 0, 0.4);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      height: unset; }
+      #firstSection .navbar .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.5); }
+      #firstSection .navbar .nav-item {
+        padding: 0 30px !important; }
+    #firstSection .mainSectionContent #carouselMainSection {
+      width: 100%;
+      margin: auto; }
+      #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
+        margin: 0; }
+      #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-title {
+        font-size: 22px !important;
+        margin: 0 auto;
+        text-align: center; }
+      #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators {
+        margin: 10px auto;
+        width: 150px;
+        padding-bottom: 20px; }
+        #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number {
+          font-size: 20px;
+          top: -13px; }
+          #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number:first-of-type {
+            left: -30px; }
+          #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number:last-of-type {
+            right: -15px; }
+      #firstSection .mainSectionContent #carouselMainSection .textSection {
+        right: 0;
+        width: 100%;
+        padding-top: 0;
+        text-align: center;
+        background-image: url("../../images/fotos/slide/1.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+        #firstSection .mainSectionContent #carouselMainSection .textSection:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.2); }
+        #firstSection .mainSectionContent #carouselMainSection .textSection h1 {
+          padding-left: 0;
+          padding-top: 25px;
+          font-size: 40px;
+          line-height: 45px;
+          text-align: center; }
+        #firstSection .mainSectionContent #carouselMainSection .textSection h3 {
+          font-size: 25px;
+          text-align: center; }
+        #firstSection .mainSectionContent #carouselMainSection .textSection p {
+          font-size: 11px;
+          color: #2e6272;
+          max-width: 250px;
+          margin: auto;
+          text-align: justify; }
+        #firstSection .mainSectionContent #carouselMainSection .textSection .socialMediaList ul {
+          text-align: center; }
+          #firstSection .mainSectionContent #carouselMainSection .textSection .socialMediaList ul li {
+            display: inline-block;
+            margin: 15px 10px; }
+      #firstSection .mainSectionContent #carouselMainSection .imageSection {
+        display: none; }
+
+  #secondSection {
+    height: 100%;
+    background-color: #faf7f6; }
+    #secondSection h2 {
+      text-transform: uppercase;
+      color: #dcba79;
+      text-align: center;
+      font-size: 25px; }
+    #secondSection h3 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 20px; }
+    #secondSection #carouselProducts .carousel-inner .carousel-item {
+      padding-top: 10px !important; }
+      #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer {
+        margin: 10px 0;
+        max-width: 90%; }
+        #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point {
+          position: absolute; }
+          #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point {
+            height: 17px;
+            width: 17px; }
+          #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details {
+            padding: 15px;
+            text-align: left;
+            font-size: 12px; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details h3 {
+              white-space: nowrap;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              color: #dcba79;
+              font-weight: bold;
+              font-size: 15px; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details .price {
+              font-family: 'ProximaNovaBold', Arial, sans-serif;
+              font-size: 13px;
+              margin-right: auto;
+              font-weight: bold;
+              display: inline-block;
+              margin-bottom: 0; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span {
+              float: right; }
+              #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i {
+                display: inline-block;
+                cursor: pointer; }
+                #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1) {
+                  width: 20px;
+                  height: 20px; }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1):before {
+                    content: '';
+                    background-image: url("../../images/iconos/ver_off.png");
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute; }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(1):hover:before {
+                    background-image: url("../../images/iconos/ver_hover.png"); }
+                #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2) {
+                  width: 20px;
+                  height: 20px; }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2):before {
+                    content: '';
+                    background-image: url("../../images/iconos/carrito2_off.png");
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute; }
+                  #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .point-details span i:nth-of-type(2):hover:before {
+                    background-image: url("../../images/iconos/carrito_hover.png"); }
+          #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .col {
+            padding-left: 5px;
+            padding-right: 5px; }
+            #secondSection #carouselProducts .carousel-inner .carousel-item .productContainer .image-point .point-content .col .point-image {
+              padding: 5px 0;
+              width: 100%; }
+    #secondSection #carouselProducts .carousel-inner .carousel-indicators {
+      position: relative;
+      margin: 35px auto;
+      bottom: 0;
+      width: 300px; }
+      #secondSection #carouselProducts .carousel-inner .carousel-indicators li {
+        background-color: #906d29; }
+        #secondSection #carouselProducts .carousel-inner .carousel-indicators li.active {
+          background-color: #dcba79; }
+      #secondSection #carouselProducts .carousel-inner .carousel-indicators .carousel-indicators-number {
+        font-size: 20px;
+        color: #dcba79; }
+    #secondSection #carouselProducts .carousel-control-next, #secondSection #carouselProducts .carousel-control-prev {
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out; }
+      #secondSection #carouselProducts .carousel-control-next:hover, #secondSection #carouselProducts .carousel-control-prev:hover {
+        opacity: 1; }
+    #secondSection .productsBanner {
+      margin-top: 100px;
+      position: relative; }
+      #secondSection .productsBanner:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5); }
+      #secondSection .productsBanner .playButton {
+        cursor: pointer;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #FFFFFF;
+        font-size: 30px;
+        line-height: 80px;
+        text-align: center;
+        bottom: 150px;
+        left: 150px;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out; }
+        #secondSection .productsBanner .playButton:hover {
+          background-color: rgba(255, 255, 255, 0.7);
+          color: #000000; }
+      #secondSection .productsBanner .description {
+        position: absolute;
+        bottom: 70px;
+        left: 150px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-size: 30px;
+        line-height: 35px; } }
 
 /*# sourceMappingURL=main.css.map */

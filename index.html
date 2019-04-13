@@ -22,11 +22,14 @@
     <!-- Section for navigation bar and slider -->
     <div class="row" id="firstSection">
       <!-- Border images -->
-      <img src="assets/images/background/palmera_izquierda_arriba.png" class="img-fluid floatImageTop" alt="main image">
-      <img src="assets/images/background/palmera_derecha.png" class="img-fluid floatImageBottom" alt="main image">
+      <img src="assets/images/background/palmera_izquierda_arriba.png" class="img-fluid floatImageTop d-none d-md-block" alt="main image">
+      <img src="assets/images/background/palmera_derecha.png" class="img-fluid floatImageBottom d-none d-md-block" alt="main image">
       <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg w-100 fixed-top">
-        <div class="collapse navbar-collapse">
+      <nav class="navbar navbar-expand-md w-100 fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainPageNavbar" aria-controls="mainPageNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainPageNavbar">
           <ul class="navbar-nav w-100 justify-content-center">
             <li class="nav-item px-1">
               <a class="nav-link" href="#">US</a>
