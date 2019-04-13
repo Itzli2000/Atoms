@@ -1071,20 +1071,31 @@ footer .footerContainer {
     box-shadow: transparent 0 0 0 0; } }
 @media only screen and (max-width: 767px) {
   #firstSection {
-    padding-top: 45px; }
+    padding-top: 48px; }
     #firstSection .navbar {
-      background: rgba(0, 0, 0, 0.4);
-      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.1)));
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
-      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+      background: rgba(0, 0, 0, 0.7);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
       height: unset; }
+      #firstSection .navbar .navbar-brand {
+        padding: 0; }
+        #firstSection .navbar .navbar-brand img {
+          width: 150px; }
       #firstSection .navbar .navbar-toggler {
         background-color: rgba(255, 255, 255, 0.5); }
       #firstSection .navbar .nav-item {
         padding: 0 30px !important; }
+        #firstSection .navbar .nav-item .dropdown-menu {
+          background-color: transparent;
+          border: none; }
+          #firstSection .navbar .nav-item .dropdown-menu .dropdown-item {
+            color: #FFFFFF; }
+            #firstSection .navbar .nav-item .dropdown-menu .dropdown-item.active {
+              background-color: transparent; }
     #firstSection .mainSectionContent #carouselMainSection {
       width: 100%;
       margin: auto; }
@@ -1093,12 +1104,16 @@ footer .footerContainer {
       #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-title {
         font-size: 22px !important;
         margin: 0 auto;
-        text-align: center; }
+        text-align: center;
+        color: #906d29 !important; }
       #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators {
         margin: 10px auto;
         width: 150px;
         padding-bottom: 20px; }
+        #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators li.active {
+          color: #906d29 !important; }
         #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number {
+          color: #906d29 !important;
           font-size: 20px;
           top: -13px; }
           #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number:first-of-type {
@@ -1121,7 +1136,7 @@ footer .footerContainer {
           position: absolute;
           top: 0;
           left: 0;
-          background-color: rgba(255, 255, 255, 0.2); }
+          background-color: rgba(255, 255, 255, 0.5); }
         #firstSection .mainSectionContent #carouselMainSection .textSection h1 {
           padding-left: 0;
           padding-top: 25px;
@@ -1331,6 +1346,73 @@ footer .footerContainer {
         right: 15px;
         font-size: 20px;
         line-height: 25px;
-        text-align: right; } }
+        text-align: right; }
+
+  #seventhSection .container .formConatiner {
+    padding: 10px; }
+  #seventhSection .container .bottomContainer {
+    text-align: center; }
+    #seventhSection .container .bottomContainer img {
+      max-width: 300px; }
+    #seventhSection .container .bottomContainer .mainDescription {
+      margin: auto;
+      margin-bottom: 25px;
+      max-width: 300px; }
+    #seventhSection .container .bottomContainer .mainList {
+      font-size: 15px; }
+      #seventhSection .container .bottomContainer .mainList li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 10px; }
+    #seventhSection .container .bottomContainer .socialList li {
+      list-style: none;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      margin: 4px 10px;
+      transition: transform 1s ease; }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(1) a:before {
+        width: 30px;
+        height: 30px; }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(2) a:before {
+        width: 30px;
+        height: 30px; }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(3) a:before {
+        width: 30px;
+        height: 30px; }
+      #seventhSection .container .bottomContainer .socialList li:nth-of-type(4) a:before {
+        width: 30px;
+        height: 30px; }
+    #seventhSection .container .bottomContainer .pagesContainer h4 {
+      font-size: 15px;
+      font-weight: bold; }
+    #seventhSection .container .bottomContainer .pagesContainer ul li {
+      font-size: 14px; }
+    #seventhSection .container .bottomContainer .paymentTitle {
+      font-size: 15px;
+      font-weight: bold; }
+    #seventhSection .container .bottomContainer .paymentList {
+      padding-left: 0; }
+      #seventhSection .container .bottomContainer .paymentList li {
+        width: 90px !important;
+        height: 50px !important; }
+        #seventhSection .container .bottomContainer .paymentList li a {
+          width: 90px !important;
+          height: 50px !important;
+          display: inline-block; }
+          #seventhSection .container .bottomContainer .paymentList li a:before {
+            width: 90px !important;
+            height: 50px !important;
+            position: absolute;
+            top: 0;
+            right: 0; }
+
+  footer .footerContainer > div {
+    text-align: center;
+    height: 30px;
+    line-height: 30px; }
+    footer .footerContainer > div p {
+      text-align: center !important; } }
 
 /*# sourceMappingURL=main.css.map */
