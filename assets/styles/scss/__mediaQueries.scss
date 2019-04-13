@@ -1,14 +1,6 @@
 @import '__mixins.scss';
 @import '__variables.scss';
 
-
-@media only screen and (max-width: 360px) {
-}
-
-
-
-
-
 @media only screen and (max-width: 1000px) {
   #firstSection {
     padding-top: 48px;
@@ -34,6 +26,21 @@
             &.active {
               background-color: transparent;
             }
+          }
+        }
+
+        &.userItem {
+          display: block;
+          form {
+            display: block;
+            input {
+              left: -2px;
+              padding-left: 30px;
+            }
+          }
+          a {
+            width: 100% !important;
+            display: block;
           }
         }
       }
@@ -504,6 +511,37 @@
         line-height: 30px;
         p {
           text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #firstSection {
+    .navbar {
+      .nav-item {
+        padding: 0 15px;
+      }
+    }
+  }
+  .mainSectionContent {
+    #carouselMainSection {
+      .carousel-inner {
+        .carousel-item {
+          justify-content: flex-start;
+        }
+      }
+      .imageSection {
+        img {
+          position: relative;
+          left: -20px;
+        }
+      }
+      .textSection {
+        h1 {
+          font-size: 50px !important;
         }
       }
     }

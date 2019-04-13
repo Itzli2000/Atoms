@@ -55,7 +55,7 @@ input::placeholder {
   }
   .navbar {
     height: 80px;
-    @include linearGradient(rgba(0,0,0,0.4),rgba(239,239,239,0.1));
+    @include linearGradient(rgba(0,0,0,0.5),rgba(239,239,239,0.2));
     .nav-item {
       padding: 0 30px;
       .nav-link {
@@ -638,18 +638,30 @@ input::placeholder {
       }
       h3 {
         position: absolute;
-        bottom: 65px;
+        bottom: 25px;
         color:$mainColor;
         font-size: 20px;
         padding-left: 20px;
         text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
       }
       p {
         position: absolute;
-        bottom: 15px;
+        bottom: 0;
         color:$fullWhite;
         font-size: 30px;
         padding-left: 20px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        h3 {
+          bottom: 65px;
+        }
+        p {
+          bottom: 15px;
+          opacity: 1;
+        }
       }
     }
   }
@@ -886,7 +898,7 @@ input::placeholder {
         left: 0;
         right: 0;
         top: 50%;
-        transform: translateY(-90%) rotate(-180deg);
+        transform: translateY(90%) rotate(180deg);
         margin-left: auto;
         margin-right: auto;
         opacity: 0;
