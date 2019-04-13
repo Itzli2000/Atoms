@@ -25,7 +25,7 @@
       <img src="assets/images/background/palmera_izquierda_arriba.png" class="img-fluid floatImageTop d-none d-lg-block" alt="main image">
       <img src="assets/images/background/palmera_derecha.png" class="img-fluid floatImageBottom d-none d-lg-block" alt="main image">
       <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-md w-100 fixed-top">
+      <nav class="navbar navbar-expand-lg w-100 fixed-top">
         <a class="navbar-brand d-block d-lg-none" href="#firstSection">
           <img src="assets/images/logos/malosa.png" class="img-fluid" alt="malosa logo">
         </a>
@@ -34,7 +34,7 @@
         </button>
         <div class="collapse navbar-collapse" id="mainPageNavbar">
           <ul class="navbar-nav w-100 justify-content-center">
-            <li class="nav-item px-1">
+            <li class="nav-item">
               <a class="nav-link" href="#">US</a>
               <span class="languageSeparator">|</span>
               <a class="nav-link" href="#">MX</a>
@@ -62,6 +62,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#fifthSection">Contacto</a>
+            </li>
+            <li class="nav-item userItem">
+              <form class="nav-link">
+                <input type="search" placeholder="Busqueda...">
+                <i id="searchButton" class="fa fa-search"></i>
+              </form>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link" href="#"></a>
             </li>
           </ul>
         </div>
@@ -156,7 +164,7 @@
       <div class="col p-0">
         <h2 class="pt-4">nuevos productos</h2>
         <h3>malosa</h3>
-        <div id="carouselProducts" class="carousel slide d-none d-md-block" data-ride="carousel">
+        <div id="carouselProducts" class="carousel slide d-none d-lg-block" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item pt-5 pb-2 active">
               <div class="productContainer">
@@ -808,6 +816,10 @@
       function resumeCarousel() {
         $("#carouselProducts").carousel('cycle');
       }
+
+      $('#searchButton').on('click', function(e) {
+        $(this).parent().toggleClass('active');
+      });
 
     })
   </script>
