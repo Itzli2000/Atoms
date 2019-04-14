@@ -1,6 +1,37 @@
 @import '__mixins.scss';
 @import '__variables.scss';
 
+@media only screen and (max-width: 1200px) {
+  #firstSection {
+    .navbar {
+      .nav-item {
+        padding: 0 15px;
+      }
+    }
+    .mainSectionContent {
+      #carouselMainSection {
+        .carousel-inner {
+          .carousel-item {
+            justify-content: flex-start !important;
+          }
+        }
+        .imageSection {
+          img {
+            position: relative;
+            left: -20px;
+          }
+        }
+        .textSection {
+          h1 {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 1000px) {
   #firstSection {
     padding-top: 48px;
@@ -10,7 +41,7 @@
       .navbar-brand {
         padding: 0;
         img {
-          width: 100px;
+          width: 130px;
         }
       }
       .nav-item.mainNav {
@@ -109,8 +140,25 @@
               }
             }
           }
+          .carousel-control-prev {
+            z-index: 100;
+            position: absolute;
+            top: unset;
+            bottom: 70px;
+            left: 30%;
+            transform: translateX(-30%);
+          }
+          .carousel-control-next {
+            z-index: 100;
+            position: absolute;
+            top: unset;
+            bottom: 70px;
+            right: 30%;
+            transform: translateX(-30%);
+          }
         }
         .textSection {
+          position: relative;
           right: 0;
           width: 100%;
           padding-top: 0;
@@ -181,7 +229,7 @@
             width: auto;
             .productContainerImage {
               max-width: unset;
-              height: 80vh;
+              height: 510px;
               width: auto;
             }
             .image-point {
@@ -511,15 +559,16 @@
         .paymentList{
           padding-left: 0;
           li {
-            width: 90px !important;
-            height: 50px !important;
+            width: 70px !important;
+            height: 30px !important;
             a {
-              width: 90px !important;
-              height: 50px !important;
+              cursor: default;
+              width: 70px !important;
+              height: 30px !important;
               display: inline-block;
               &:before {
-                width: 90px !important;
-                height: 50px !important;
+                width: 70px !important;
+                height: 30px !important;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -547,32 +596,19 @@
 }
 
 
-@media only screen and (max-width: 1200px) {
-  #firstSection {
-    .navbar {
-      .nav-item {
-        padding: 0 15px;
-      }
-    }
-    .mainSectionContent {
+@media only screen and (max-width: 450px) {
+  .mainSectionContent {
       #carouselMainSection {
         .carousel-inner {
-          .carousel-item {
-            justify-content: flex-start !important;
+          .carousel-control-prev {
+            left: 15% !important;
+            transform: translateX(-15%) !important;
           }
-        }
-        .imageSection {
-          img {
-            position: relative;
-            left: -20px;
-          }
-        }
-        .textSection {
-          h1 {
-            font-size: 50px !important;
+          .carousel-control-next {
+            right: 15% !important;
+            transform: translateX(-15%) !important;
           }
         }
       }
     }
-  }
 }

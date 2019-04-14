@@ -32,7 +32,7 @@
         <li class="nav-item userItem mainNav d-flex flex-row d-lg-none">
           <form class="nav-link">
             <input type="search" placeholder="Busqueda...">
-            <i id="searchButton" class="fa fa-search"></i>
+            <i id="searchButtonMobile" class="fa fa-search"></i>
           </form>
           <a class="nav-link" href="#"></a>
           <a class="nav-link" href="#"></a>
@@ -432,7 +432,7 @@
           <div class="carousel-inner">
             <div class="carousel-item pt-5 pb-2 active">
               <div class="productContainer">
-                <div class="image-point" style="top:180px; left:150px;">
+                <div class="image-point" style="top:130px; left:120px;">
                   <div class="point"></div>
                   <div class="point-content">
                     <div class="closeFloatCard">
@@ -460,7 +460,7 @@
             </div>
             <div class="carousel-item pt-5 pb-2">
               <div class="productContainer">
-                <div class="image-point" style="bottom:180px; left:150px;">
+                <div class="image-point" style="bottom:195px; left:130px;">
                   <div class="point"></div>
                   <div class="point-content top">
                     <div class="closeFloatCard">
@@ -488,7 +488,7 @@
             </div>
             <div class="carousel-item pt-5 pb-2">
               <div class="productContainer">
-                <div class="image-point" style="bottom:180px; left:150px;">
+                <div class="image-point" style="bottom:180px; left:110px;">
                   <div class="point"></div>
                   <div class="point-content top">
                     <div class="closeFloatCard">
@@ -825,6 +825,10 @@
       }
 
       $('#searchButton').on('click', function(e) {
+        $(this).parent().toggleClass('active');
+      });
+
+      $('#searchButtonMobile').on('click', function(e) {
         $(this).parent().toggleClass('active');
       });
 

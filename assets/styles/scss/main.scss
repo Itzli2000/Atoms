@@ -1193,6 +1193,9 @@ input::placeholder {
           height: 30px;
           display: inline-block;
           margin: 0 5px;
+          a {
+            cursor: default;
+          }
           &:nth-of-type(1) {
             a {
               outline: none;
@@ -1329,7 +1332,6 @@ input::placeholder {
 footer {
   .footerContainer {
     border-top: 2px solid $gray;
-    max-width: 1000px;
     width: 100%;
     margin: auto;
     justify-content: space-around;

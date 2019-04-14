@@ -1059,6 +1059,8 @@ input::placeholder {
         height: 30px;
         display: inline-block;
         margin: 0 5px; }
+        #seventhSection .container .bottomContainer .paymentList li a {
+          cursor: default; }
         #seventhSection .container .bottomContainer .paymentList li:nth-of-type(1) a {
           outline: none; }
           #seventhSection .container .bottomContainer .paymentList li:nth-of-type(1) a:before {
@@ -1152,7 +1154,6 @@ input::placeholder {
 
 footer .footerContainer {
   border-top: 2px solid #e9e6e8;
-  max-width: 1000px;
   width: 100%;
   margin: auto;
   justify-content: space-around; }
@@ -1179,6 +1180,16 @@ footer .footerContainer {
     box-shadow: 0 0 0 5px rgba(220, 186, 121, 0.3), 0 0 0 10px rgba(220, 186, 121, 0.2), 0 0 0 15px rgba(220, 186, 121, 0.1); }
   to {
     box-shadow: transparent 0 0 0 0; } }
+@media only screen and (max-width: 1200px) {
+  #firstSection .navbar .nav-item {
+    padding: 0 15px; }
+  #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
+    justify-content: flex-start !important; }
+  #firstSection .mainSectionContent #carouselMainSection .imageSection img {
+    position: relative;
+    left: -20px; }
+  #firstSection .mainSectionContent #carouselMainSection .textSection h1 {
+    font-size: 50px; } }
 @media only screen and (max-width: 1000px) {
   #firstSection {
     padding-top: 48px; }
@@ -1194,7 +1205,7 @@ footer .footerContainer {
       #firstSection .navbar .navbar-brand {
         padding: 0; }
         #firstSection .navbar .navbar-brand img {
-          width: 100px; }
+          width: 130px; }
       #firstSection .navbar .nav-item.mainNav {
         padding: 0 !important;
         width: 70px;
@@ -1261,7 +1272,22 @@ footer .footerContainer {
             left: -30px; }
           #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-indicators .carousel-indicators-number:last-of-type {
             right: -15px; }
+      #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-control-prev {
+        z-index: 100;
+        position: absolute;
+        top: unset;
+        bottom: 70px;
+        left: 30%;
+        transform: translateX(-30%); }
+      #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-control-next {
+        z-index: 100;
+        position: absolute;
+        top: unset;
+        bottom: 70px;
+        right: 30%;
+        transform: translateX(-30%); }
       #firstSection .mainSectionContent #carouselMainSection .textSection {
+        position: relative;
         right: 0;
         width: 100%;
         padding-top: 0;
@@ -1315,7 +1341,7 @@ footer .footerContainer {
         width: auto; }
         #secondSection #carouselProductsMobile .carousel-inner .carousel-item .productContainer .productContainerImage {
           max-width: unset;
-          height: 80vh;
+          height: 510px;
           width: auto; }
         #secondSection #carouselProductsMobile .carousel-inner .carousel-item .productContainer .image-point {
           position: absolute; }
@@ -1550,15 +1576,16 @@ footer .footerContainer {
     #seventhSection .container .bottomContainer .paymentList {
       padding-left: 0; }
       #seventhSection .container .bottomContainer .paymentList li {
-        width: 90px !important;
-        height: 50px !important; }
+        width: 70px !important;
+        height: 30px !important; }
         #seventhSection .container .bottomContainer .paymentList li a {
-          width: 90px !important;
-          height: 50px !important;
+          cursor: default;
+          width: 70px !important;
+          height: 30px !important;
           display: inline-block; }
           #seventhSection .container .bottomContainer .paymentList li a:before {
-            width: 90px !important;
-            height: 50px !important;
+            width: 70px !important;
+            height: 30px !important;
             position: absolute;
             top: 0;
             right: 0; }
@@ -1569,15 +1596,12 @@ footer .footerContainer {
     line-height: 30px; }
     footer .footerContainer > div p {
       text-align: center !important; } }
-@media only screen and (max-width: 1200px) {
-  #firstSection .navbar .nav-item {
-    padding: 0 15px; }
-  #firstSection .mainSectionContent #carouselMainSection .carousel-inner .carousel-item {
-    justify-content: flex-start !important; }
-  #firstSection .mainSectionContent #carouselMainSection .imageSection img {
-    position: relative;
-    left: -20px; }
-  #firstSection .mainSectionContent #carouselMainSection .textSection h1 {
-    font-size: 50px !important; } }
+@media only screen and (max-width: 450px) {
+  .mainSectionContent #carouselMainSection .carousel-inner .carousel-control-prev {
+    left: 15% !important;
+    transform: translateX(-15%) !important; }
+  .mainSectionContent #carouselMainSection .carousel-inner .carousel-control-next {
+    right: 15% !important;
+    transform: translateX(-15%) !important; } }
 
 /*# sourceMappingURL=main.css.map */
