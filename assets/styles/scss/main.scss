@@ -28,11 +28,11 @@ input::placeholder {
 
 
 #mainContainer {
-  max-width: 1700px;
   overflow: hidden;
 }
 
 #firstSection {
+  overflow: hidden;
   position: relative;
   background-image: url('../../images/background/top.png');
   background-position: center;
@@ -158,7 +158,8 @@ input::placeholder {
     position: relative;
     #carouselMainSection {
       width: 100%;
-      margin: 0;
+      max-width: 1300px;
+      margin: 0 auto;
       .carousel-inner {
         height: 100%;
         .carousel-item {
@@ -311,6 +312,7 @@ input::placeholder {
 }
 
 #secondSection {
+  overflow: hidden;
   height: 100%;
   background-color: #faf7f6;
   h2 {
@@ -326,6 +328,8 @@ input::placeholder {
   }
   #carouselProducts,
   #carouselProductsMobile {
+    max-width: 1700px;
+    margin: auto;
     .carousel-inner {
       height: 100%;
       .carousel-item {
@@ -530,6 +534,11 @@ input::placeholder {
       top: 0;
       background-color: rgba(0,0,0,0.5);
     }
+    img {
+      max-width: unset;
+      width: 100%;
+      height: auto;
+    }
     .playButton {
       cursor: pointer;
       position: absolute;
@@ -562,6 +571,7 @@ input::placeholder {
 }
 
 #thirdSection {
+  overflow: hidden;
   height: 100%;
   background-image: url('../../images/background/medio.png');
   background-size: cover;
@@ -668,6 +678,7 @@ input::placeholder {
 }
 
 #fourthSection {
+  overflow: hidden;
   padding: 50px 0;
   .informationContainer {
     max-width: 1000px;
@@ -777,6 +788,7 @@ input::placeholder {
 }
 
 #fifthSection {
+  overflow: hidden;
   .container {
     align-items: center;
     max-width: 1000px;
@@ -844,6 +856,7 @@ input::placeholder {
 }
 
 #sixthSection {
+  overflow: hidden;
   position: relative;
   .floatImageTop {
     position: absolute;
@@ -927,6 +940,9 @@ input::placeholder {
       top: 0;
       background-color: rgba(0,0,0,0);
     }
+    img {
+      width: 100%;
+    }
     .btn {
       cursor: pointer;
       position: absolute;
@@ -956,6 +972,9 @@ input::placeholder {
 }
 
 #seventhSection {
+  max-width: 1700px;
+  margin: auto;
+  overflow: hidden;
   .container { 
     max-width: 1000px;
     margin: auto;
